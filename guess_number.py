@@ -3,6 +3,7 @@
 import main
 
 
+
 # boas vindas ao jogo
 print("Bem-vindo ao jogo de adivinhar o número!")
 # perguntar o nome do jogador humano

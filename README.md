@@ -1,263 +1,136 @@
-# Adivinhe o Número - Guess the Number
+# Python 🐍
 
-## Índice
+## 1. O Jogo
 
-- [1. Resumo do Projeto](#1-resumo-do-projeto)
-- [2. Considerações Gerais](#2-considerações-gerais)
-- [3. Objetivos de Aprendizagem](#3-objetivos-de-aprendizagem)
+![](./assets/thumb.png)
+    
+    _Guess the number_ é um jogo interativo que ocorre no terminal, onde o jogador
+    e o computador se revezam tentando adivinhar um número aleatório entre 1 e 100.
+    Eles devem levar em consideração a tentativa anterior, se foi "muito alta" ou
+    "muito baixa".
 
----
+### 1.1 Como iniciar o jogo?
+  - Abra o código no seu terminal e rode o seguinte código:
+    ![Código para rodar o jogo no terminal](./assets/Captura%20de%20tela%202024-03-24%20165137.png)
 
-![ADIVINHE O
-NÚMERO](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/guess-the-number.png?alt=media)
+### 1.2 Simulação do jogo: 
+  
+  - Mensagem de boas-vendas . Digite seu nome para o jogo saber quem está jogando , e chamá-lo pelo nome.
+  ![Imagem do retorno no terminal para boas-vindas e digitar o seu nome](./assets/Captura%20de%20tela%202024-03-24%20123904.png)
 
-## 1. Resumo do Projeto
 
-_Adivinhe o Número_ é um jogo interativo que ocorre no terminal, onde o jogador
-e o computador se revezam tentando adivinhar um número aleatório entre 1 e 100.
-Eles devem levar em consideração a tentativa anterior, se foi "muito alta" ou
-"muito baixa".
+  - O terminal iniciará o jogo solicitando um palpite, e mostrará uma mensagem para indicar se o palpite foi maior, menor ou igual ao número sorteado.
+  ![Imagem do retorno no terminal solicitando um palpite do jogador e indicar logo após se o palpite foi correto ou não](./assets/Captura%20de%20tela%202024-03-24%20123932.png)
 
-![Demonstração animada de uma sessão de
-jogo](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/guess-the-number-demo.gif?alt=media)
+
+  - Caso não seja o número correto, será a vez do jogador computador palpitar. O mesmo ocorre com a mensagem retornada.
+  ![Imagem do retorno no terminal indicando o palpite do computador](./assets/Captura%20de%20tela%202024-03-24%20123959.png)
+
+  - Para fazer o palpite, é necessário colocar um número entre 1 e 100. Caso contrário, aparecerá uma mensagem de erro e o jogo só continuará assim que a condição for preenchida.  
+  ![Imagem do retorno no terminal para um erro, caso o jogador palpite algo fora do escopo entre 1 e 100](./assets/Captura%20de%20tela%202024-03-24%20124032.png)
+
+  - Caso o palpite seja correto, o terminal retorna com uma frase de parabéns e mostra todos os palpites que
+  o vencedor fez durante o jogo.
+  ![Imagem do retorno no terminal de um palpite correto](./assets/Captura%20de%20tela%202024-03-24%20123811.png)
+
+  - Existe a opção de jogar novamente ou não. Para iniciar um novo jogo, tecle "s", caso contrário, tecle "n".
+  ![Imagem do retorno no terminal para a escolha de jogar novamente ou terminar o jogo](./assets/Captura%20de%20tela%202024-03-24%20123834.png)
+
+  - O terminal retornará uma mensagem de erro caso o jogador tecle qualquer outro caractere direfente de "s" ou "n", até que a condição seja alcançada.
+  ![Imagem do retorno no terminal com erro ao teclar](./assets/Captura%20de%20tela%202024-03-24%20165108.png)
 
 ## 2. Considerações Gerais
 
-- Este projeto deve ser desenvolvido de maneira **individual**.
-- A estimativa de tempo para completar o projeto é de 1 a 2 Sprints.
-- Concentre-se em adquirir conhecimentos ao invés de simplesmente "terminar" o
-  projeto.
-- Tenha paciência. Não se preocupe muito com o que ainda não entende
-  completamente.
-- Seu aprendizado se desenvolverá à medida que você progride.
+- Jogo implementado em Python. A única dependência externa que foi
+  utilizadas é o pytest para testes unitários.
+- O jogo será realizado no terminal. Os testes podem ser executados no terminal
+  ou em seu IDE (VSCode é mais do que adequado).
+- Será utilizado um número aleatório entre 1 e 100 como número secreto.
+- O jogador e o computador se revezarão para adivinhar o número.
+- Após cada turno, serão mostradas informações sobre a suposição feita.
+- O jogo terminará quando o número for adivinhado. Será mostrada uma lista de
+  todas as tentativas do jogador vencedor.
 
-### **Critérios de Aceitação Mínimos do Projeto**
+## 3. Considerações Técnicas
 
-- O jogador e o computador se revezarão em turnos para tentar adivinhar o
-  número.
-- Após cada tentativa, deve ser mostrado:
-  * O nome do jogador (pessoa ou computador).
-  * A suposição feita.
-  * Uma mensagem indicando se a suposição foi muito alta, muito baixa ou
-    correta.
-- O jogo terminará assim que o jogador ou o computador adivinhar o número
-  secreto. Deve ser mostrada uma mensagem de fim de jogo, assim como uma lista
-  de todas as tentativas feitas pelo jogador vencedor.
+O jogo será realizado no terminal usando Python. A lógica do jogo é baseada
+em estruturas de controle, incluindo loops, condicionais e coleções. Utilizei uma funcionalidade da biblioteca de utilidades do Python para a
+geração de números aleatórios. Foi realizado testes unitários para suas
+classes e métodos utilizando PyTest e simulação de geração de números
+aleatórios com unittest.mock.
 
-**_Divirta-se construindo seu jogo de adivinhação de números! 🎲🎮_**
 
-- [Versão em Python](./docs/README-python.md)
-- [Versão em Java](./docs/README-java.md)
 
-## 3. Objetivos de Aprendizagem
 
-Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projeto. Pense nisso para decidir sua estratégia de trabalho.
 
-### Java
 
-- [ ] **Modificadores de acesso (public, private, protected)**
 
-- [ ] **Uso de condicionais**
 
-- [ ] **Uso de loops (Laços)**
 
-#### Tipos de dados
+## 4. Futuras implementações e melhorias:
 
-- [ ] **Dados primitivos vs não primitivos**
 
-- [ ] **Cadeias de caracteres**
+### 4.1 Criar uma "inteligência" para jogar contra o computador (Edição Hacker)
 
-- [ ] **Arrays**
+Depois de ter implementado o jogo básico e feito algumas melhorias, você pode
+levar as coisas para o próximo nível criando uma "inteligência" para jogar
+contra o computador. Esta "inteligência" poderia ser simplesmente outra
+implementação do jogo que usa uma estratégia diferente, ou poderia ser um
+algoritmo de aprendizado de máquina que melhora a cada jogo que joga.
 
-#### Coleções
+1. Implemente uma nova versão do jogo que usa uma estratégia diferente. Por
+exemplo, em vez de adivinhar aleatoriamente, esta versão poderia tentar
+adivinhar o número mais provável com base nas suposições anteriores.
 
-- [ ] **ArrayList**
+2. Teste sua nova "inteligência" jogando contra o computador. Você pode vencer
+o computador com sua nova estratégia?
 
-#### Testes
+3. Se você se sentir ambicioso, você pode tentar implementar um algoritmo de
+aprendizado de máquina. Este algoritmo poderia aprender de cada jogo que joga,
+melhorando suas suposições a cada jogo. Você poderia usar uma biblioteca de
+aprendizado de máquina como scikit-learn para fazer isso.
 
-- [ ] **JUnit**
+4. Certifique-se de adicionar testes unitários para sua nova "inteligência".
+Você também pode querer adicionar algumas métricas para rastrear como seu
+algoritmo melhora a cada jogo que joga.
 
-- [ ] **Mockito**
+#### Referências
 
-### Programação Orientada a Objetos (POO)
+- [Introdução ao
+  scikit-learn](https://scikit-learn.org/stable/getting_started.html)
+- [Como implementar um algoritmo de aprendizado de
+  máquina](https://machinelearningmastery.com/start-here/#algorithms)
 
-- [ ] **Classes**
+### 4.2 Extensão: Versão Orientada a Objetos (OOP)
 
-- [ ] **Objetos**
+Uma vez que tenhas implementado e aprimorado a versão base do jogo,
+pode ser interessante considerar a possibilidade de reescrevê-lo
+utilizando o paradigma da Programação Orientada a Objetos (OOP).
+Essa seria uma extensão (e não um requisito) que te permitiria
+familiarizar-se com os objetivos de aprendizado da programação
+orientada a objetos. Talvez seja útil se os teus próximos projetos
+em Python envolverem codificação com frameworks que utilizam esse
+paradigma. Por exemplo, algumas ferramentas como os
+ORM (Mapeadores Objeto-Relacional) encontrados no mundo do Python
+são projetados para funcionar com programação orientada a objetos.
 
-- [ ] **Métodos**
+1. Crie uma classe `Game` que represente uma instância do jogo. Esta classe
+pode ter métodos como `start`, `play_turn`, `check_guess`, e `end_game`.
 
-- [ ] **Atributos**
+2. Crie uma classe `Player` que represente um jogador. Esta classe pode ter
+atributos como `name` e `guesses`, e métodos como `make_guess`.
 
-- [ ] **Construtores**
+3. Crie uma subclasse `ComputerPlayer` que herde da classe `Player`. Esta
+classe pode sobrescrever o método `make_guess` para implementar a lógica de
+adivinhação do computador.
 
-- [ ] **Encapsulamento**
+4. Na classe `Game`, use instâncias das classes `Player` e `ComputerPlayer`
+para representar o jogador e o computador.
 
-- [ ] **Abstração**
+5. Adicione testes unitários para suas classes e métodos. Python tem um módulo
+incorporado chamado `unittest` que você pode usar para isso.
 
-- [ ] **Composição**
+### Referências
 
-- [ ] **Interfaces**
-
-- [ ] **Herança (super, extends, override)**
-
-- [ ] **Linguagem de Modelagem Unificada (UML, diagramas de classe)**
-
-### Python
-
-- [ ] **Variáveis (declaração, atribuição, escopo)**
-
-  <details><summary>Links</summary><p>
-
-  * [Variables in Python – Real Python (em inglês)](https://realpython.com/python-variables/)
-  * [Variables in Python - GeeksforGeeks (em inglês)](https://www.geeksforgeeks.org/python-variables/)
-</p></details>
-
-- [ ] **Uso de condicionais (if, elif, ternário)**
-
-  <details><summary>Links</summary><p>
-
-  * [Conditional Statements in Python – Real Python (em inglês)](https://realpython.com/python-conditional-statements/)
-</p></details>
-
-- [ ] **Operadores (identidade, aritméticos, comparação etc)**
-
-  <details><summary>Links</summary><p>
-
-  * [Python Operators - GeeksforGeeks (em inglês)](https://www.geeksforgeeks.org/python-operators/)
-</p></details>
-
-- [ ] **Docstrings (e sua diferença de comentários)**
-
-  <details><summary>Links</summary><p>
-
-  * [Docstrings - Python Docs (em inglês)](https://docs.python.org/3/tutorial/controlflow.html#documentation-strings)
-</p></details>
-
-- [ ] **Linting (pylint)**
-
-  <details><summary>Links</summary><p>
-
-  * [Pylint - Documentação oficial](https://pylint.pycqa.org/en/latest/)
-  * [Linting Python in Visual Studio Code - Visual Studio Code Docs (em inglês)](https://code.visualstudio.com/docs/python/linting)
-</p></details>
-
-#### Tipos de dados
-
-- [ ] **Tipos de dados primitivos (int, float, str, bool)**
-
-  <details><summary>Links</summary><p>
-
-  * [Data Types - Python Docs (em inglês)](https://docs.python.org/3/library/datatypes.html)
-  * [Data types in Python (em inglês)](https://www.educative.io/answers/data-types-in-python)
-</p></details>
-
-- [ ] **Listas (arrays)**
-
-  <details><summary>Links</summary><p>
-
-  * [Lists - Python Docs (em inglês)](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
-  * [Lists and Tuples in Python - Real Python (em inglês)](https://realpython.com/python-lists-tuples/)
-</p></details>
-
-- [ ] **Tuples**
-
-  <details><summary>Links</summary><p>
-
-  * [Tuples - Python Docs (em inglês)](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
-  * [Lists and Tuples in Python - Real Python (em inglês)](https://realpython.com/python-lists-tuples/)
-</p></details>
-
-- [ ] **Dictionaries (Dicts)**
-
-  <details><summary>Links</summary><p>
-
-  * [Dictionaries - Python Docs (em inglês)](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
-  * [Dictionaries in Python - Real Python (em inglês)](https://realpython.com/python-dicts/)
-</p></details>
-
-- [ ] **Sets**
-
-  <details><summary>Links</summary><p>
-
-  * [Sets - Python Docs (em inglês)](https://docs.python.org/3/tutorial/datastructures.html#sets)
-  * [Sets in Python - Real Python (em inglês)](https://realpython.com/python-sets/)
-</p></details>
-
-#### Funções
-
-- [ ] **Conceitos básicos (parâmetros, argumentos, valores padrão, retorno)**
-
-  <details><summary>Links</summary><p>
-
-  * [Defining Functions - Python Docs (em inglês)](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
-  * [Python Functions - GeeksforGeeks (em inglês)](https://www.geeksforgeeks.org/python-functions/)
-</p></details>
-
-#### Iteração
-
-- [ ] **Uso de loops (while, for..in)**
-
-  <details><summary>Links</summary><p>
-
-  * [Loops in Python - For, While and Nested Loops - GeeksforGeeks](https://www.geeksforgeeks.org/loops-in-python/)
-  * [Loops - Learn Python - Free Interactive Python Tutorial](https://www.learnpython.org/en/Loops)
-</p></details>
-
-#### Testes em Python
-
-- [ ] **Testes unitários (unit tests, unittest, pytest)**
-
-  <details><summary>Links</summary><p>
-
-  * [unittest - Python Docs (em inglês)](https://docs.python.org/3/library/unittest.html)
-  * [pytest - Documentação oficial](https://docs.pytest.org/en/6.2.x/)
-</p></details>
-
-- [ ] **Uso de mocks (e patch)**
-
-  <details><summary>Links</summary><p>
-
-  * [unittest.mock - Python Docs (em inglês)](https://docs.python.org/3/library/unittest.mock.html)
-  * [unittest.mock - Python Docs (em inglês)](https://docs.python.org/3/library/unittest.mock.html)
-</p></details>
-
-- [ ] **Uso de fixtures**
-
-  <details><summary>Links</summary><p>
-
-  * [Fixtures do pytest - Documentação oficial](https://docs.pytest.org/en/6.2.x/fixture.html)
-</p></details>
-
-#### Modularização
-
-- [ ] **Módulos**
-
-  <details><summary>Links</summary><p>
-
-  * [Módulos - Python Docs (em inglês)](https://docs.python.org/3/tutorial/modules.html)
-</p></details>
-
-#### Gerenciamento de dependências
-
-- [ ] **pip (instalação e uso de pacotes)**
-
-  <details><summary>Links</summary><p>
-
-  * [pip - Python Docs (em inglês)](https://docs.python.org/3/installing/index.html)
-</p></details>
-
-- [ ] **Ambiente Virtual (ambientes virtuais, virtualenv)**
-
-  <details><summary>Links</summary><p>
-
-  * [venv — Creation of virtual environments — Python 3.12.2 documentation (em inglês)](https://docs.python.org/3/library/venv.html)
-  * [Python Virtual Environments: A Primer – Real Python (em inglês)](https://realpython.com/python-virtual-environments-a-primer/)
-</p></details>
-
-- [ ] **requirements.txt**
-
-  <details><summary>Links</summary><p>
-
-  * [requirements.txt - Documentação oficial](https://pip.pypa.io/en/stable/user_guide/#requirements-files)
-</p></details>
+- [Programação Orientada a Objetos em
+  Python](https://docs.python.org/3/tutorial/classes.html)
