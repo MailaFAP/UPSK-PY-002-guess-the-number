@@ -11,7 +11,7 @@
 
 ### 1.1 Como iniciar o jogo?
   - Abra o código no seu terminal e rode o seguinte código:
-    ![Código para rodar o jogo no terminal](./assets/Captura%20de%20tela%202024-03-24%20123723.png)
+    ![Código para rodar o jogo no terminal](./assets/Captura%20de%20tela%202024-03-24%20165137.png)
 
 ### 1.2 Simulação do jogo: 
   
@@ -35,6 +35,9 @@
 
   - Existe a opção de jogar novamente ou não. Para iniciar um novo jogo, tecle "s", caso contrário, tecle "n".
   ![Imagem do retorno no terminal para a escolha de jogar novamente ou terminar o jogo](./assets/Captura%20de%20tela%202024-03-24%20123834.png)
+
+  - O terminal retornará uma mensagem de erro caso o jogador tecle qualquer outro caractere direfente de "s" ou "n", até que a condição seja alcançada.
+  ![Imagem do retorno no terminal com erro ao teclar](./assets/Captura%20de%20tela%202024-03-24%20165108.png)
 
 ## 2. Considerações Gerais
 
