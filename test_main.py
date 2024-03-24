@@ -42,7 +42,7 @@ def test_fazer_palpite_invalid():
 
 # ok
 def test_armazenar_palpite():
-    """Teste para ver se está sendo armazenado os palpites no array correto"""
+    """Teste para ver se está sendo armazenado os palpites no array correto."""
     jogador_computador = {
         "nome": "Computador",
         "palpites_computador": []
@@ -113,7 +113,7 @@ def test_printar_tentativas(capsys):
 
 
 def test_troca_jogadores():
-    """Testa se está trocando corretamente de jogadores a cada jogada """
+    """Testa se está trocando corretamente de jogadores a cada jogada. """
     assert main.troca_jogadores(1) == 0
     assert main.troca_jogadores(0) == 1
 
