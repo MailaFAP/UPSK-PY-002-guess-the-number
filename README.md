@@ -37,7 +37,7 @@
   ![Imagem do retorno no terminal para a escolha de jogar novamente ou terminar o jogo](./assets/Captura%20de%20tela%202024-03-24%20123834.png)
 
   - O terminal retornará uma mensagem de erro caso o jogador tecle qualquer outro caractere direfente de "s" ou "n", até que a condição seja alcançada.
-  ![Imagem do retorno no terminal com erro ao teclar](./assets/Captura%20de%20tela%202024-03-24%20165108.png)
+  ![Imagem do retorno no terminal com erro ao teclar algo que seja diferente de "s" ou "n"](./assets/Captura%20de%20tela%202024-03-24%20165108.png)
 
 ## 2. Considerações Gerais
 
